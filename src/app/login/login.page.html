@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-input clearInput placeholder="Username" [(ngModel)]="username"></ion-input>
+  </div>
+  <div>
+    <ion-input clearInput placeholder="Password" type="password"></ion-input>
+  </div>
+  <div style="text-align:center">
+    <ion-button (click)="navToTab1()">Log In</ion-button>
+  </div>
+  <div style="text-align:center">
+    <ion-button (click)="navToRegister()">Register</ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title *ngIf="currentProperty">
+      {{currentProperty.name}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-img style="width: 250px; height: 250px;" src={{currentProperty.image}}></ion-img>
+  </ion-item>
+  <ion-item>
+    <section>Owner: {{currentProperty.renter}}</section>
+  </ion-item>
+  <ion-item>
+    <section>Price: {{currentProperty.price}}</section>
+  </ion-item>
+</ion-content>
