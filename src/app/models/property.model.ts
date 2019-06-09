@@ -1,15 +1,17 @@
 export class Property {
     id: number;
     name: string;
-    renter: string;
+    location: string;
+    img: string;
     price: number;
-    image: string
+    user_id: number;
 
     constructor() {
         this.id = 0;
         this.name = "";
-        this.renter = "";
+        this.location = "";
+        this.img = "";
         this.price = 0;
-        this.image = "";
+        this.user_id = 0;
     }
 }

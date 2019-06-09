@@ -1,9 +1,33 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      Profile
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <div class="ion-padding">
+    <ion-avatar class="avatar">
+      <img
+        width="256"
+        src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+      />
+    </ion-avatar>
+  </div>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>First Name</ion-label>
+      {{user.first_name}}
+    </ion-item>
+    <ion-item>
+      <ion-label>Last Name</ion-label>
+      {{user.last_name}}
+    </ion-item>
+    <ion-item>
+      <ion-label>E-mail</ion-label>
+      {{user.email}}
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,20 +1,29 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Register</ion-title>
+    <ion-title>
+      Client HTTP Form
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div>
-    <ion-input clearInput placeholder="Username" ></ion-input>
+  <div class="ion-padding">
+    <ion-item>
+      <ion-input clearInput placeholder="First Name" [(ngModel)]="user.firstname"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input clearInput placeholder="Last Name" [(ngModel)]="user.lastname"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input clearInput placeholder="E-mail" [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input clearInput placeholder="Password" type="password" [(ngModel)]="user.password"></ion-input>
+    </ion-item>
   </div>
-  <div>
-    <ion-input clearInput placeholder="E-mail" ></ion-input>
-  </div>
-  <div>
-    <ion-input clearInput placeholder="Password" type="password"></ion-input>
-  </div>
-  <div style="text-align:center">
-    <ion-button (click)="navToLogin()">Register</ion-button>
-  </div>
+  <ion-button expand="full" (click)="submit()">Register</ion-button>
+  <ion-button expand="full" (click)="navBack()">Return to Login Page</ion-button>
 </ion-content>

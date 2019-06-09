@@ -5,16 +5,20 @@
 </ion-header>
 
 <ion-content>
-  <div>
-    <ion-input clearInput placeholder="Username" [(ngModel)]="username"></ion-input>
+  <div class="ion-padding">
+
+    <ion-item>
+        <ion-input clearInput placeholder="E-mail" [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-input clearInput placeholder="Password" type="password" [(ngModel)]="user.password"></ion-input>
+    </ion-item>
+    
+  
   </div>
-  <div>
-    <ion-input clearInput placeholder="Password" type="password"></ion-input>
-  </div>
-  <div style="text-align:center">
-    <ion-button (click)="navToTab1()">Log In</ion-button>
-  </div>
-  <div style="text-align:center">
-    <ion-button (click)="navToRegister()">Register</ion-button>
-  </div>
+
+  <ion-button expand="full" (click)="submit()">Log In</ion-button>
+  <ion-button expand="full" (click)="navToRegister()">Register</ion-button>
+
 </ion-content>
